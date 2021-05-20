@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>user</title>
-        <meta charset="UTF-8">
+        <title>Epass</title>
+        <meta charset="utf-8">
     </head>
     <body>
-        <h1>E-Ticket Status</h1><br>
-        <h2>fname : {{var}}</h2>><br>
-        <h2>email : {{var1}}</h2><br>
-        <h2>Source :{{var2}}</h2><br>
-        <h2>Destination :{{var3}},Destination-District:{{var4}}</h2><br>
-        <h2>Contact No: {{var5}}</h2><br>
-        <h2>status :{{var6}}</h2><br>
-        <!--<table border=1>
-            {% for key, value in login_registration_details.items() %}
-        
-            <tr>
-               <th> {{ key }} </th>
-               <td> {{ value }} </td>
-            </tr>
-        
-            {% endfor %}
-        </table>-->
-    </body>
+        <div>
+            <form action="/login_page" method="POST">
+                <label>User Name : </label>
+                <input type="text" placeholder="User name" name="username"><br>
+                <!--<label for="lname">Last Name : </label>
+                <input type="text" placeholder="Enter your last name" name="lname" id="lname"><br>-->
+                <label>Email ID: </label>
+                <input type="text" placeholder="Enter your email" name="email_id"><br>
 
+                <label>Aadhar ID : </label>
+                <input type="text" placeholder="Enter your Source " name="aadhar_card"><br>
+
+                <label>Source Destination : </label>
+                <input type="text" placeholder="Enter your source" name="Travelling_from"><br>
+
+                <label>Target Destination : </label>
+                <input type="text" placeholder="Enter your Destination" name="Destination"><br>
+
+                <label>District : </label>
+                <input type="text" placeholder="Enter your District" name="District"><br>
+
+                <label>Contac NO : </label>
+                <input type="number" placeholder="Enter your contact no" name="PhoneNumber"><br>
+
+                <label>Travel date : </label>
+                <input type="text" placeholder="Enter your Destination state" name="travel_date"><br>
+
+
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </body>
 </html>
